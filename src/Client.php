@@ -63,31 +63,31 @@ class Client
      * @var string
      *      The client ID.
      */
-    private $clientId;
+    protected $clientId;
 
     /**
      * @var \Microsoft\Graph\Graph
      *      The Microsoft Graph.
      */
-    private $graph;
+    protected $graph;
 
     /**
      * @var \GuzzleHttp\ClientInterface
      *      The Guzzle HTTP client.
      */
-    private $httpClient;
+    protected $httpClient;
 
     /**
      * @var \Krizalys\Onedrive\Definition\ServiceDefinitionInterface
      *      The service definition.
      */
-    private $serviceDefinition;
+    protected $serviceDefinition;
 
     /**
      * @var \Krizalys\Onedrive\ClientState
      *      The OAuth state (token, etc...).
      */
-    private $state;
+    protected $state;
 
     /**
      * Constructor.
