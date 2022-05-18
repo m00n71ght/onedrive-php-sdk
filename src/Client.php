@@ -216,7 +216,7 @@ class Client
         // redirected to the redirect URI, with a code passed in the query
         // string (the name of the variable is "code"). This is suitable for
         // PHP.
-        return self::AUTH_URL . "?$query";
+        return static::AUTH_URL . "?$query";
     }
 
     /**
@@ -305,7 +305,7 @@ class Client
         ];
 
         $response = $this->httpClient->post(
-            self::TOKEN_URL,
+            static::TOKEN_URL,
             ['form_params' => $values]
         );
 
@@ -355,7 +355,7 @@ class Client
         ];
 
         $response = $this->httpClient->post(
-            self::TOKEN_URL,
+            static::TOKEN_URL,
             ['form_params' => $values]
         );
 
